@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Star } from 'lucide-react';
+import bridalFavorite from '../assets/bridalfavorite.png';
 
 export default function BridalSpecial() {
   return (
@@ -9,7 +10,7 @@ export default function BridalSpecial() {
         <div className="grid lg:grid-cols-2 items-stretch">
           <div className="relative aspect-[4/5] lg:aspect-auto">
              <img 
-               src="/bridalfavorite.png" 
+               src={bridalFavorite} 
                alt="Bridal Special Mehndi" 
                className="w-full h-full object-cover"
                referrerPolicy="no-referrer"

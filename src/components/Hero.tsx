@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MessageCircle, Phone, ArrowRight } from 'lucide-react';
+import heroBanner from '../assets/beautifulbridalmehndidesign.jpg';
 
 export default function Hero() {
   return (
@@ -29,7 +30,7 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://wa.me/91XXXXXXXXXX" className="btn-primary flex items-center justify-center space-x-2">
+            <a href="https://wa.me/919599401022" className="btn-primary flex items-center justify-center space-x-2">
               <MessageCircle size={20} />
               <span>Book on WhatsApp</span>
             </a>
@@ -60,7 +61,7 @@ export default function Hero() {
         >
           <div className="relative z-10 aspect-[4/5] rounded-t-[100px] rounded-b-[40px] overflow-hidden shadow-2xl border-4 border-white">
             <img 
-              src="/beautifulbridalmehndidesign.jpg" 
+              src={heroBanner} 
               alt="Beautiful Bridal Mehndi Design"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
+import leadArtist from '../assets/leadartist.png';
+import detailedWork from '../assets/detailed_work.png';
 
 export default function About() {
   return (
@@ -10,7 +12,7 @@ export default function About() {
           <div className="hidden md:block relative">
              <div className="aspect-square rounded-3xl overflow-hidden shadow-xl rotate-3">
                 <img 
-                  src="/leadartist.png" 
+                  src={leadArtist} 
                   alt="Muskan - Professional Mehndi Artist" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -18,7 +20,7 @@ export default function About() {
              </div>
              <div className="absolute -bottom-8 -right-8 w-1/2 aspect-square rounded-3xl overflow-hidden shadow-2xl -rotate-6 border-8 border-white">
                 <img 
-                  src="/detailed_work.png" 
+                  src={detailedWork} 
                   alt="Muskan's Detailed Art Work" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

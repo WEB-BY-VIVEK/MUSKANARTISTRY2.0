@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center space-x-3 mb-6">
-              <img src="/logo.png" alt="Logo" className="h-10 w-auto brightness-0 invert" />
+              <img src={logo} alt="Logo" className="h-10 w-auto brightness-0 invert" />
               <span className="text-2xl font-serif font-bold tracking-tight">
                 Muskan <span className="text-brand-gold italic">Artistry</span>
               </span>
