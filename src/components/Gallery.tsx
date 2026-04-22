@@ -2,12 +2,12 @@ import React from 'react';
 import { motion } from 'motion/react';
 
 const galleryImages = [
-  { url: '/work1.jpg', title: 'Royal Bridal Portrait' },
-  { url: '/work2.jpg', title: 'Arabic Floral Fusion' },
-  { url: '/work3.jpg', title: 'Intricate Minimalist' },
-  { url: '/work4.jpg', title: 'Full Arm Marigold' },
-  { url: '/work5.jpg', title: 'Designer Feet Mehndi' },
-  { url: '/work6.jpg', title: 'Celebration Style' }
+  { url: '/000.jpg', title: 'Royal Bridal Portrait' },
+  { url: '/01.png', title: 'Arabic Floral Fusion' },
+  { url: '/03.jpg', title: 'Intricate Minimalist' },
+  { url: '/04.png', title: 'Full Arm Marigold' },
+  { url: '/06.png', title: 'Designer Feet Mehndi' },
+  { url: '/beautifulbridalmehndidesign.jpg', title: 'Celebration Style' }
 ];
 
 export default function Gallery() {

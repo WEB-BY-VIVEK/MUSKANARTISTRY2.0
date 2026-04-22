@@ -60,7 +60,7 @@ export default function Hero() {
         >
           <div className="relative z-10 aspect-[4/5] rounded-t-[100px] rounded-b-[40px] overflow-hidden shadow-2xl border-4 border-white">
             <img 
-              src="https://images.unsplash.com/photo-1621236304845-81149472dc06?q=80&w=1000&auto=format&fit=crop" 
+              src="/beautifulbridalmehndidesign.jpg" 
               alt="Beautiful Bridal Mehndi Design"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
