@@ -6,8 +6,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="lg:col-span-1">
-            <a href="#" className="text-2xl font-serif font-bold tracking-tight mb-6 block">
-              Muskan <span className="text-brand-gold italic">Artistry</span>
+            <a href="#" className="flex items-center space-x-3 mb-6">
+              <img src="/logo.png" alt="Logo" className="h-10 w-auto brightness-0 invert" />
+              <span className="text-2xl font-serif font-bold tracking-tight">
+                Muskan <span className="text-brand-gold italic">Artistry</span>
+              </span>
             </a>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Empowering traditional art with modern creativity. Bespoke Mehndi designs for your most cherished moments in Greater Noida West.

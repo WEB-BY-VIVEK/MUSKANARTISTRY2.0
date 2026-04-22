@@ -10,7 +10,7 @@ export default function About() {
           <div className="hidden md:block relative">
              <div className="aspect-square rounded-3xl overflow-hidden shadow-xl rotate-3">
                 <img 
-                  src="/muskan.jpeg" 
+                  src="/muskan_profile.jpg" 
                   alt="Muskan - Professional Mehndi Artist" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -18,7 +18,7 @@ export default function About() {
              </div>
              <div className="absolute -bottom-8 -right-8 w-1/2 aspect-square rounded-3xl overflow-hidden shadow-2xl -rotate-6 border-8 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1612450782335-5be06638ac8c?auto=format&fit=crop&q=80&w=400" 
+                  src="/work1.jpg" 
                   alt="Muskan's Detailed Art Work" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

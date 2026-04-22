@@ -2,12 +2,12 @@ import React from 'react';
 import { motion } from 'motion/react';
 
 const galleryImages = [
-  { url: 'https://images.unsplash.com/photo-1621236304845-81149472dc06?auto=format&fit=crop&q=80&w=600', title: 'Royal Bridal Portrait' },
-  { url: 'https://images.unsplash.com/photo-1612450756770-5f2f53488219?auto=format&fit=crop&q=80&w=600', title: 'Arabic Floral Fusion' },
-  { url: 'https://images.unsplash.com/photo-1596484552979-3300f451ea96?auto=format&fit=crop&q=80&w=600', title: 'Intricate Minimalist' },
-  { url: 'https://images.unsplash.com/photo-1621236304724-4f014e3b7470?auto=format&fit=crop&q=80&w=600', title: 'Full Arm Marigold' },
-  { url: 'https://images.unsplash.com/photo-1616422896590-73df9cbad4d7?auto=format&fit=crop&q=80&w=600', title: 'Designer Feet Mehndi' },
-  { url: 'https://images.unsplash.com/photo-1621236304603-9d0d348a7356?auto=format&fit=crop&q=80&w=600', title: 'Celebration Style' }
+  { url: '/work1.jpg', title: 'Royal Bridal Portrait' },
+  { url: '/work2.jpg', title: 'Arabic Floral Fusion' },
+  { url: '/work3.jpg', title: 'Intricate Minimalist' },
+  { url: '/work4.jpg', title: 'Full Arm Marigold' },
+  { url: '/work5.jpg', title: 'Designer Feet Mehndi' },
+  { url: '/work6.jpg', title: 'Celebration Style' }
 ];
 
 export default function Gallery() {

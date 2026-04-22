@@ -25,8 +25,9 @@ export default function Navbar() {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#" className="flex items-center space-x-2">
-          <span className={`text-2xl font-serif font-bold tracking-tight ${scrolled ? 'text-brand-maroon' : 'text-brand-maroon'}`}>
+        <a href="#" className="flex items-center space-x-3 group">
+          <img src="/logo.png" alt="Muskan Mehndi Studio Logo" className="h-10 md:h-12 w-auto transition-transform group-hover:scale-105" />
+          <span className={`text-xl md:text-2xl font-serif font-bold tracking-tight ${scrolled ? 'text-brand-maroon' : 'text-brand-maroon'}`}>
             Muskan <span className="text-gold italic">Artistry</span>
           </span>
         </a>
