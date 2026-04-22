@@ -10,7 +10,7 @@ export default function About() {
           <div className="hidden md:block relative">
              <div className="aspect-square rounded-3xl overflow-hidden shadow-xl rotate-3">
                 <img 
-                  src="/MUSKAN .jpeg" 
+                  src="/muskan.jpeg" 
                   alt="Muskan - Professional Mehndi Artist" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
