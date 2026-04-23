@@ -75,7 +75,7 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <a href="tel:+91XXXXXXXXXX" className="btn-primary flex items-center space-x-2">
+            <a href="tel:+919599401022" className="btn-primary flex items-center space-x-2">
               <Phone size={18} />
               <span>Call Now</span>
             </a>
