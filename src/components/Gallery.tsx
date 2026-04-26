@@ -1,19 +1,13 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import img1 from '../assets/000.jpg';
-import img2 from '../assets/01.png';
-import img3 from '../assets/03.jpg';
-import img4 from '../assets/04.png';
-import img5 from '../assets/06.png';
-import img6 from '../assets/beautifulbridalmehndidesign.jpg';
 
 const galleryImages = [
-  { url: img1, title: 'Royal Bridal Portrait' },
-  { url: img2, title: 'Arabic Floral Fusion' },
-  { url: img3, title: 'Intricate Minimalist' },
-  { url: img4, title: 'Full Arm Marigold' },
-  { url: img5, title: 'Designer Feet Mehndi' },
-  { url: img6, title: 'Celebration Style' }
+  { url: '/assets/000.jpg', title: 'Royal Bridal Portrait' },
+  { url: '/assets/01.png', title: 'Arabic Floral Fusion' },
+  { url: '/assets/03.jpg', title: 'Intricate Minimalist' },
+  { url: '/assets/04.png', title: 'Full Arm Marigold' },
+  { url: '/assets/06.png', title: 'Designer Feet Mehndi' },
+  { url: '/assets/beautifulbridalmehndidesign.jpg', title: 'Celebration Style' }
 ];
 
 export default function Gallery() {

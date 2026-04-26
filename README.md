@@ -1,20 +1,21 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Muskan Artistry - Mehndi Artist Website
 
-# Run and deploy your AI Studio app
+Professional portfolio for Muskan Artistry, a premium Mehndi artist in Greater Noida West.
 
-This contains everything you need to run your app locally.
+## Deployment Structure
+To make everything visible and predictable, this project uses a specific structure:
 
-View your app in AI Studio: https://ai.studio/apps/ae2a1219-456a-4fb3-981d-4980d731d9d5
+- **`/public/assets`**: Contains all images. These are served directly at `your-site.com/assets/filename.jpg`. We use these instead of hashed imports to ensure easy debugging and file visibility.
+- **`/src/components`**: All UI components are modular and use static paths for performance and reliability.
+- **`vercel.json`**: Configured for Single Page Application (SPA) routing on Vercel.
+- **`.github/workflows/deploy.yml`**: Automated deployment to GitHub Pages on every push to the `main` branch.
 
-## Run Locally
+## How to Deploy
+1. **GitHub Pages**: Push code to `main`. The GitHub Action will automatically build and deploy to the `gh-pages` branch.
+2. **Vercel**: Import this repository. It will auto-detect Vite and deploy immediately.
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Troubleshooting Images
+If images ever break:
+1. Ensure the image exists in `public/assets/`.
+2. Check that the component uses `/assets/your-image.jpg` as the source.
+3. Perform a Hard Refresh (`Ctrl + F5`) in your browser to clear cache.

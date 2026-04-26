@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MessageCircle, Phone, ArrowRight } from 'lucide-react';
-import heroBanner from '../assets/beautifulbridalmehndidesign.jpg';
+
+const heroBanner = '/assets/beautifulbridalmehndidesign.jpg';
 
 export default function Hero() {
   return (
