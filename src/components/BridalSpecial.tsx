@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Star } from 'lucide-react';
 
-const bridalFavorite = '/assets/bridalfavorite.png';
+const bridalFavorite = '/assets/bridalfavorite.webp';
 
 export default function BridalSpecial() {
   return (

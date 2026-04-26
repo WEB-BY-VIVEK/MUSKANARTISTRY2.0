@@ -29,18 +29,28 @@ async function optimize() {
         image.resize(1600);
       }
 
+      // 1. Save as compressed original format
       if (file.toLowerCase().endsWith('.jpg') || file.toLowerCase().endsWith('.jpeg')) {
         await image.jpeg({ quality: 80, mozjpeg: true }).toFile(outputPath);
       } else if (file.toLowerCase().endsWith('.png')) {
         await image.png({ quality: 80, compressionLevel: 9 }).toFile(outputPath);
       } else {
-        // Just copy other files
         fs.copyFileSync(inputPath, outputPath);
       }
+
+      // 2. ALSO generate WebP version for modern browsers
+      const webpPath = outputPath.substring(0, outputPath.lastIndexOf('.')) + '.webp';
+      await sharp(inputPath)
+        .resize(metadata.width > 1600 ? 1600 : null)
+        .webp({ quality: 75 })
+        .toFile(webpPath);
       
       const oldSize = fs.statSync(inputPath).size;
       const newSize = fs.statSync(outputPath).size;
+      const webpSize = fs.statSync(webpPath).size;
+      
       console.log(`  Done: ${(oldSize / 1024).toFixed(1)}KB -> ${(newSize / 1024).toFixed(1)}KB (${Math.round((1 - newSize / oldSize) * 100)}% saved)`);
+      console.log(`  WebP version: ${(webpSize / 1024).toFixed(1)}KB (${Math.round((1 - webpSize / oldSize) * 100)}% saved)`);
     } catch (err) {
       console.error(`  Error processing ${file}:`, err);
     }

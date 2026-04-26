@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { MessageCircle, Phone, ArrowRight } from 'lucide-react';
 
-const heroBanner = '/assets/beautifulbridalmehndidesign.jpg';
+const heroBanner = '/assets/beautifulbridalmehndidesign.webp';
 
 export default function Hero() {
   return (

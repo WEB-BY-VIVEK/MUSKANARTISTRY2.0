@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
 
-const leadArtist = '/assets/leadartist.png';
-const detailedWork = '/assets/detailed_work.png';
+const leadArtist = '/assets/leadartist.webp';
+const detailedWork = '/assets/detailed_work.webp';
 
 export default function About() {
   return (

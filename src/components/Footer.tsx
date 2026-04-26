@@ -1,6 +1,6 @@
 import React from 'react';
 
-const logo = '/assets/logo.png';
+const logo = '/assets/logo.webp';
 
 export default function Footer() {
   return (
