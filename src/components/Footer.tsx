@@ -1,6 +1,6 @@
 import React from 'react';
 
-const logo = '/assets/logo.webp';
+const logo = ''; // Placeholder for logo
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center space-x-3 mb-6">
-              <img src={logo} alt="Logo" className="h-10 w-auto brightness-0 invert" />
+              {logo && <img src={logo} alt="Logo" className="h-10 w-auto brightness-0 invert" />}
               <span className="text-2xl font-serif font-bold tracking-tight">
                 Muskan <span className="text-brand-gold italic">Artistry</span>
               </span>

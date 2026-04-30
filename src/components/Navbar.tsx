@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-const logo = '/assets/logo.webp';
+const logo = ''; // Placeholder for logo
 
 const navLinks = [
   { name: 'Home', href: '#' },
@@ -28,7 +28,7 @@ export default function Navbar() {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         <a href="#" className="flex items-center space-x-3 group">
-          <img src={logo} alt="Muskan Mehndi Studio Logo" className="h-10 md:h-12 w-auto transition-transform group-hover:scale-105" />
+          {logo && <img src={logo} alt="Muskan Mehndi Studio Logo" className="h-10 md:h-12 w-auto transition-transform group-hover:scale-105" />}
           <span className={`text-xl md:text-2xl font-serif font-bold tracking-tight ${scrolled ? 'text-brand-maroon' : 'text-brand-maroon'}`}>
             Muskan <span className="text-gold italic">Artistry</span>
           </span>

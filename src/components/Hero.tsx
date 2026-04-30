@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { MessageCircle, Phone, ArrowRight } from 'lucide-react';
 
-const heroBanner = '/assets/beautifulbridalmehndidesign.webp';
+const heroBanner = 'https://placehold.co/1600x900/6b0d0d/white?text=Bridal+Mehndi';
 
 export default function Hero() {
   return (
