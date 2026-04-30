@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Star } from 'lucide-react';
 
-const bridalFavorite = 'https://placehold.co/1000x1200/6b0d0d/white?text=Bridal+Special';
+const bridalFavorite = '/favourite.webp';
 
 export default function BridalSpecial() {
   return (

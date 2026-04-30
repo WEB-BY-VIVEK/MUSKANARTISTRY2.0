@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from 'motion/react';
 const categories = ['All', 'Bridal', 'Arabic', 'Traditional', 'Modern'];
 
 const galleryImages = [
-  { url: 'https://placehold.co/800x1000/6b0d0d/white?text=Gallery+1', title: 'Royal Bridal Portrait', category: 'Bridal' },
-  { url: 'https://placehold.co/800x1000/6b0d0d/white?text=Gallery+2', title: 'Arabic Floral Fusion', category: 'Arabic' },
-  { url: 'https://placehold.co/800x1000/6b0d0d/white?text=Gallery+3', title: 'Intricate Minimalist', category: 'Traditional' },
-  { url: 'https://placehold.co/800x1000/6b0d0d/white?text=Gallery+4', title: 'Full Arm Marigold', category: 'Modern' },
-  { url: 'https://placehold.co/800x1000/6b0d0d/white?text=Gallery+5', title: 'Designer Feet Mehndi', category: 'Modern' },
-  { url: 'https://placehold.co/800x1000/6b0d0d/white?text=Gallery+6', title: 'Celebration Style', category: 'Bridal' }
+  { url: '/work1.webp', title: 'Royal Bridal Portrait', category: 'Bridal' },
+  { url: '/work2.webp', title: 'Arabic Floral Fusion', category: 'Arabic' },
+  { url: '/work3.webp', title: 'Intricate Minimalist', category: 'Traditional' },
+  { url: '/work4.webp', title: 'Full Arm Marigold', category: 'Modern' },
+  { url: '/clientwork.webp', title: 'Designer Feet Mehndi', category: 'Modern' },
+  { url: '/work.webp', title: 'Celebration Style', category: 'Bridal' }
 ];
 
 export default function Gallery() {

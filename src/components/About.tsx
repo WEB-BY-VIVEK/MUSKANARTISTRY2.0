@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
 
-const leadArtist = 'https://placehold.co/800x1000/6b0d0d/white?text=Muskan';
-const detailedWork = 'https://placehold.co/800x800/6b0d0d/white?text=Mehndi+Detail';
+const leadArtist = '/leadartist1.webp';
+const detailedWork = '/detailedwork.webp';
 
 export default function About() {
   return (
