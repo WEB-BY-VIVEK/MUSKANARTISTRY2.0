@@ -34,40 +34,32 @@ async function optimize() {
         await image.jpeg({ quality: 80, mozjpeg: true }).toFile(outputPath);
       } else if (file.toLowerCase().endsWith('.png')) {
         await image.png({ quality: 80, compressionLevel: 9 }).toFile(outputPath);
+      } else if (file.toLowerCase().endsWith('.webp')) {
+         // If it's already webp, just copy it or re-optimize it
+         await image.webp({ quality: 80 }).toFile(outputPath);
       } else {
         fs.copyFileSync(inputPath, outputPath);
       }
 
-      // 2. ALSO generate WebP version for modern browsers
-      const webpPath = outputPath.substring(0, outputPath.lastIndexOf('.')) + '.webp';
-      await sharp(inputPath)
-        .resize(metadata.width > 1600 ? 1600 : null)
-        .webp({ quality: 75 })
-        .toFile(webpPath);
+      // 2. ALSO generate WebP version if not already webp
+      if (!file.toLowerCase().endsWith('.webp')) {
+        const webpPath = outputPath.substring(0, outputPath.lastIndexOf('.')) + '.webp';
+        await sharp(inputPath)
+          .resize(metadata.width > 1600 ? 1600 : null)
+          .webp({ quality: 75 })
+          .toFile(webpPath);
+        
+        const webpSize = fs.statSync(webpPath).size;
+        console.log(`  WebP version: ${(webpSize / 1024).toFixed(1)}KB (${Math.round((1 - webpSize / fs.statSync(inputPath).size) * 100)}% saved)`);
+      }
       
       const oldSize = fs.statSync(inputPath).size;
       const newSize = fs.statSync(outputPath).size;
-      const webpSize = fs.statSync(webpPath).size;
       
       console.log(`  Done: ${(oldSize / 1024).toFixed(1)}KB -> ${(newSize / 1024).toFixed(1)}KB (${Math.round((1 - newSize / oldSize) * 100)}% saved)`);
-      console.log(`  WebP version: ${(webpSize / 1024).toFixed(1)}KB (${Math.round((1 - webpSize / oldSize) * 100)}% saved)`);
     } catch (err) {
-      console.error(`  Error processing ${file}:`, err);
+      console.error(`  Error processing ${file}:`, err.message);
     }
-  }
-
-  // Also handle public/logo.png if it's there
-  if (fs.existsSync('public/logo.png')) {
-     console.log('Optimizing logo.png in public/');
-     try {
-       const logoPath = 'public/logo.png';
-       const tempPath = 'public/logo_temp.png';
-       await sharp(logoPath).png({ quality: 80 }).toFile(tempPath);
-       fs.renameSync(tempPath, logoPath);
-       console.log('  Logo optimized.');
-     } catch (e) {
-       console.error('  Logo optimization failed:', e);
-     }
   }
 }
 
