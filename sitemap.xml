@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://muskanartistry.shop/</loc>
     <lastmod>2024-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://muskanartistry.shop/assets/beautifulbridalmehndidesign.webp</image:loc>
-      <image:caption>Beautiful Bridal Mehndi Design - Muskan Artistry</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://muskanartistry.shop/assets/000.webp</image:loc>
-      <image:caption>Bridal Mehndi Artist Greater Noida West</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://muskanartistry.shop/assets/01.webp</image:loc>
-      <image:caption>Arabic Mehndi Design</image:caption>
-    </image:image>
   </url>
 </urlset>
