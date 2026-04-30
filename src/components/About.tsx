@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
 
-const leadArtist = '/assets/leadartist.webp';
+const leadArtist = '/assets/muskan.webp';
 const detailedWork = '/assets/detailed_work.webp';
 
 export default function About() {
@@ -16,7 +16,6 @@ export default function About() {
                   src={leadArtist} 
                   alt="Muskan - Professional Mehndi Artist" 
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
                 />
              </div>
              <div className="absolute -bottom-8 -right-8 w-1/2 aspect-square rounded-3xl overflow-hidden shadow-2xl -rotate-6 border-8 border-white">
@@ -24,7 +23,6 @@ export default function About() {
                   src={detailedWork} 
                   alt="Muskan's Detailed Art Work" 
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
                 />
              </div>
           </div>

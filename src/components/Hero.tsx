@@ -65,7 +65,6 @@ export default function Hero() {
               src={heroBanner} 
               alt="Beautiful Bridal Mehndi Design"
               className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
             />
           </div>
           {/* Decorative element */}

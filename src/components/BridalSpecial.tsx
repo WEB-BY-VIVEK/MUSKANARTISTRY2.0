@@ -14,7 +14,6 @@ export default function BridalSpecial() {
                src={bridalFavorite} 
                alt="Bridal Special Mehndi" 
                className="w-full h-full object-cover"
-               referrerPolicy="no-referrer"
              />
              <div className="absolute top-8 left-8 bg-brand-maroon text-white px-6 py-2 rounded-full font-semibold shadow-lg">
                 Bridal Favorite
