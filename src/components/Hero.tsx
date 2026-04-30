@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { MessageCircle, Phone, ArrowRight } from 'lucide-react';
 
-const heroBanner = '/work.webp';
+const heroBanner = '/assets/work.webp';
 
 export default function Hero() {
   return (

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-const logo = '/logo.webp'; // Placeholder for logo
+const logo = '/assets/logo.webp'; // Placeholder for logo
 
 const navLinks = [
   { name: 'Home', href: '#' },

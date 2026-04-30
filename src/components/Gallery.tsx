@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from 'motion/react';
 const categories = ['All', 'Bridal', 'Arabic', 'Traditional', 'Modern'];
 
 const galleryImages = [
-  { url: '/work1.webp', title: 'Royal Bridal Portrait', category: 'Bridal' },
-  { url: '/work2.webp', title: 'Arabic Floral Fusion', category: 'Arabic' },
-  { url: '/work3.webp', title: 'Intricate Minimalist', category: 'Traditional' },
-  { url: '/work4.webp', title: 'Full Arm Marigold', category: 'Modern' },
-  { url: '/clientwork.webp', title: 'Designer Feet Mehndi', category: 'Modern' },
-  { url: '/work.webp', title: 'Celebration Style', category: 'Bridal' }
+  { url: '/assets/work1.webp', title: 'Royal Bridal Portrait', category: 'Bridal' },
+  { url: '/assets/work2.webp', title: 'Arabic Floral Fusion', category: 'Arabic' },
+  { url: '/assets/work3.webp', title: 'Intricate Minimalist', category: 'Traditional' },
+  { url: '/assets/work4.webp', title: 'Full Arm Marigold', category: 'Modern' },
+  { url: '/assets/clientwork.webp', title: 'Designer Feet Mehndi', category: 'Modern' },
+  { url: '/assets/work.webp', title: 'Celebration Style', category: 'Bridal' }
 ];
 
 export default function Gallery() {
